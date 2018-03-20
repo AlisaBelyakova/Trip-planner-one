@@ -3,27 +3,58 @@
   <head>
     <title>Trip Planner</title>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <link href=“https://fonts.googleapis.com/css?family=Cagliostro” rel=“stylesheet”>
     <link rel="stylesheet" href="./style.css"></link>
     <script src="./bundle.js" defer></script>
   </head>
   <body>
-    
+      <!-- <div class=“logo”>
+          <img alt="logo" src=“./images/1.png” />
+        </div> -->
     <header>
-      <div class=“logo”>
-        <img alt=“logo” src=“images/logo.png” />
-      </div>
+      <!-- <div class=“logo”>
+        <img alt="logo" src=“./images/1.png” />
+      </div> -->
       <nav>
-        <div class=“nav-item”>
-          <a href=“#”>Home</a>
+        <div class=“nav-item” id="home" >
+          <a href=“#” >Home</a>
         </div>
-        <div class=“nav-item”>
-          <a href=“#”>About</a>
+        <div class=“nav-item” id="about">
+          <a href=“#” >About</a>
         </div>
-        <div class=“nav-item”>
-          <a href=“#”>Contact Us</a>
+        <div class=“nav-item” id="contact">
+          <a href=“#”>Contact</a>
         </div>
       </nav>
     </header>
+    <div class="right-block">
+      <div class="search-bar">
+        <h3>Hotels</h3>
+        <select>
+          <option value="Hotel">Hilton</option>
+        </select>
+        <h3>Restaurants</h3>
+        <select>
+            <option value="Restaurant">Maggiano's</option>
+          </select>
+        <h3>Things To Do</h3>
+        <select>
+            <option value="Activity">Movie Theater</option>
+          </select>
+      </div>
+      <br>
+      <div class="itinerary">
+        <h2>Itinerary</h2>
+        <ul>
+          <h3>My Hotel</h3>
+          <li></li>
+          <h3>My Restaurants</h3>
+          <li></li>
+          <h3>My Activities</h3>
+          <li></li>
+        </ul>
+      </div>
+    </div>
     <div id="map"></div>
   </body>
 </html>

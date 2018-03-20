@@ -4,7 +4,7 @@
   
   body {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Cagliostro", Helvetica, Arial, sans-serif;
     background-color: #C1B5AD;
   }
 
@@ -17,14 +17,83 @@
     display: flex; 
     padding-left: 20px;
     background-color: rgba(44, 127, 160, 0.8);
-    width: 50%;
+    width: 20vw;
+    height: 20vw;
     position: fixed;
     z-index: 10; 
-    border-radius: 0 0 30px 0;
+    border-radius: 0 0 20vw 0;
+    justify-content: flex-center;
+    align-items: center;
   }
-  .nav-item a {
-    justify-content: flex-end;
+
+  header a{
+    padding-left: 140px;
+    color:white; 
+    font-size:30px; 
+    text-decoration:none;
+    line-height: 75px;
+    font-family: "Cagliostro", sans-serif;
+
   }
+  nav {
+    position: relative;
+    top: -20px;
+  }
+  select {
+    height: 40px;
+    width: 250px;
+    font-size: 25px;
+  }
+  /* .logo {
+    position: fixed;
+    top:15px;
+    left:15px;
+    z-index: 12;
+  } */
+  #about {
+    position: relative;
+    left: -30px;
+  }
+  #home{
+    position: relative;
+    left: 15px;
+  }
+  #contact{
+    position: relative;
+    left: -125px;
+  }
+  .right-block{
+    background-color: rgba(248, 249, 250, 0.6);
+    display: flex;
+    position: fixed;
+    left: 75%;
+    z-index: 10;
+    width: 25vw;
+    height: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+  .search-bar {
+    width: 25vw;
+    height: 25vw;
+    background-color: white;
+    padding-left: 20px;
+    border-radius: 0 0 15px 15px;
+  }
+  .itinerary {
+    width: 21vw;
+    height: 25vw;
+    background-color: white;
+    padding-left: 20px;
+    border-radius: 15px 15px 0 0 ;
+    position: fixed;
+    right: 25px;
+    bottom: 0;
+  }
+  /* #home {
+    padding-left: 125px;
+  } */
   /* Header defaults
 header {
   background-color: rgba(44, 127, 160, 0.8);
